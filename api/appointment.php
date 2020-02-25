@@ -48,13 +48,21 @@ $sql = "SELECT doctor_name FROM doctor_master";
 ?>
 </select><br/><br>
 Date: &nbsp;&nbsp;&nbsp;&nbsp;<select name="date" id="avdate"><option>--Choose--</option>
-
+<?php 
+include "connection.php";
+$sql = "SELECT date_d FROM doctor_schedule";
+           $result = mysqli_query($conn, $sql);  
+           while ($row = $result->fetch_assoc()) {
+            unset($date_d);
+            $date_d = $row['date_d']; 
+            echo '<option>'.$date_d.'</option>';
+           
+}
+?>
 </select><br><br>
 <input type="submit" name="submit" value="Check Availability" />
 </form><br/>
-
 </tr><br/>
-
 <div id= "copyright" class="container">
 <div class="cont" align="center">
 <input type="text" placeholder="Name"/>	
