@@ -1,0 +1,26 @@
+.headers{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+ 
+  
+  tr:nth-child(even){background-color: #8FD3FE}
+  tr:nth-child(odd){background-color: #DAF0FF}
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  table {
+    border-collapse: collapse;
+    width: 40%;
+  }
+  
+  input[type="radio"]{
+    margin-top: 10px;
+   float:center;
+    height:1em;  
+    width:15px;
+    margin-left: 65px;
+  }
+
