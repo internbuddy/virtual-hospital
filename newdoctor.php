@@ -2,8 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="/doctor/css/appointment.css">
-<link rel="stylesheet" href="/doctor/css/default.css">
+<link rel="stylesheet" href="/virtual-hospital/css/appointment.css">
+<link rel="stylesheet" href="/virtual-hospital/css/default.css">
 
 <style>
 .mySlides {display:none;}
@@ -12,11 +12,11 @@
 <body>
 <ul>
 <h2>Doctor's Appointment System</h2>
-<li><a class="" href="/doctor/viewappointment.php">View Appointments</a></li>
-<li><a class="active" href="/doctor/appointment.php">Make Appointment</a></li>
-  <li><a class="" href="/doctor/patient.php">Patient Details</a></li>
-  <li><a href="/doctor/doctor.php">Doctor Details</a></li>
-  <li><a href="/doctor/index.php">Home</a></li>
+<li><a class="" href="/virtual-hospital/viewappointment.php">View Appointments</a></li>
+<li><a class="active" href="/virtual-hospital/appointment.php">Make Appointment</a></li>
+  <li><a class="" href="/virtual-hospital/patient.php">Patient Details</a></li>
+  <li><a href="/virtual-hospital/doctor.php">Doctor Details</a></li>
+  <li><a href="/virtual-hospital/index.php">Home</a></li>
 </ul>
 <img class="nature" src="https://res.cloudinary.com/dzxofbpuq/image/upload/v1582002779/Doctorappointment/02-Ways-to-Make-the-Most-of-Your-Doctors-Appointment_First-appointment_93813283_cyano66_wr3xl2.jpg">
 <br/>
