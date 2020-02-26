@@ -19,22 +19,9 @@
 </ul>
 <img class="nature" src="https://res.cloudinary.com/dzxofbpuq/image/upload/v1582002779/Doctorappointment/02-Ways-to-Make-the-Most-of-Your-Doctors-Appointment_First-appointment_93813283_cyano66_wr3xl2.jpg">
 <br/>
-<script>
-$(document).ready(function(){
-    $('#docname').change(function(){
-        $.ajax({
-            url: 'getdate.php',
-            type: 'post',
-            success: function(response){
-              $('#avdate').html(response);
-            }
-        });
-    });
-  });
-</script>
 <form id="appn" method="post" align="center" action="/virtual-hospital/api/availability.php"> 
 <h1><b><u>Make an Appointment</u></b></h1><br/>
-Doctor: &nbsp;&nbsp;&nbsp;&nbsp;<select name="doc" id="docname"><option>--Choose--</option>
+Doctor: &nbsp;&nbsp;&nbsp;&nbsp;<select name="doc"><option>--Choose--</option>
 <?php 
 include "connection.php";
 $sql = "SELECT doctor_name FROM doctor_master";
@@ -42,12 +29,11 @@ $sql = "SELECT doctor_name FROM doctor_master";
            while ($row = $result->fetch_assoc()) {
             unset($doctor_name);
             $name = $row['doctor_name']; 
-            echo '<option>'.$name.'</option>';
-           
+            echo '<option>'.$name.'</option>';           
 }
 ?>
 </select><br/><br>
-Date: &nbsp;&nbsp;&nbsp;&nbsp;<select name="date" id="avdate"><option>--Choose--</option>
+Date: &nbsp;&nbsp;&nbsp;&nbsp;<select name="date"><option>--Choose--</option>
 <?php 
 include "connection.php";
 $sql = "SELECT date_d FROM doctor_schedule";

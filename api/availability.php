@@ -109,14 +109,17 @@ var currentScrollPos = window.pageYOffset;
 </div>
 <br>
 <?php
-
+include "connection.php";
+$a=$_POST['doc'];
 ?>
 <script>
 $(document).ready(function(){
     $('#r1').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax.php',
-            type: 'post',
+            type: 'post',  
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -125,9 +128,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r2').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax2.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -136,9 +141,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r3').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax3.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -147,9 +154,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r4').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax4.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -158,9 +167,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r5').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax5.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -169,9 +180,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r6').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax6.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -181,9 +194,11 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     $('#r7').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax7.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -192,9 +207,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r8').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax8.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -203,9 +220,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r9').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax9.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -214,9 +233,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r10').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax10.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -225,9 +246,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r11').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax11.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -236,9 +259,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r12').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax12.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -247,9 +272,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r13').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax13.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -258,9 +285,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r14').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax14.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -269,9 +298,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r15').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax15.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -280,9 +311,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r16').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax16.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -291,9 +324,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r17').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax17.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -302,9 +337,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r18').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax18.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -313,9 +350,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r19').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax19.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -324,9 +363,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r20').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax20.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }
@@ -335,9 +376,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('#r21').click(function(){
+      var b="<?php echo $a; ?>";
         $.ajax({
             url: 'ajax21.php',
             type: 'post',
+            data:{a:b},
             success: function(response){
               $('#displayslot').html(response);
             }

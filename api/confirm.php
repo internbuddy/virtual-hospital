@@ -1,14 +1,12 @@
 <?php
-session_start();
 include "connection.php";							
-$sql = " INSERT INTO bookings (doctor_id,doctor_name,day,slot,time_t,date_d)
-VALUES ('" . doctor_id. "','" . $_SESSION["doc"] . "', '" . $_SESSION['slot'] . "','" . $_SESSION['time'] . "','" . $_SESSION['date_d'] . "')";
-if ($conn->query($sql) === TRUE) {
-echo "<script>alert('Your booking has been accepted!');</script>";
-							} 
-else {
-echo "<script>alert('There was an Error')<script>";
-							}
-
-$conn->close();
-?>
+echo '<script>
+if(confirm("Are you sure to Book this slot ?")){';
+	$sql = " INSERT INTO bookings (doctor_name,day,slot,time_t,date_d)
+	VALUES ('" . $_POST["doc"] . "', '" . $_POST['slot'] . "','" . $_POST['time'] . "','" . $_POST['date_d'] . "')";
+	$conn->close();
+echo'
+  alert("Your slot has been booked! Thank you !!!");
+	}  
+	</script>';
+	?>

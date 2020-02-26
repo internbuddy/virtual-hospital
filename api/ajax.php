@@ -91,9 +91,9 @@ function myFunction16() {
 }
 </script>
 </html><?php 
-session_start();
 include "connection.php";
-$sql = "SELECT sunmrng FROM doctor_schedule s,doctor_master m where s.doctor_id=m.doctor_id and doctor_name='".$_SESSION['doc']."'";
+$t=$_POST['a'];
+$sql = "SELECT sunmrng FROM doctor_schedule s,doctor_master m where s.doctor_id=m.doctor_id and doctor_name='".$t."'";
            $result = mysqli_query($conn, $sql);  
            while ($row = $result->fetch_assoc()) {
             unset($sunmrng);
